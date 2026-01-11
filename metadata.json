@@ -1,0 +1,8 @@
+{
+  "name": "Aura - AI Soulmate",
+  "description": "A personalized, emotionally intelligent AI companion featuring RAG knowledge base integration, image understanding, and a warm, aesthetic interface.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}

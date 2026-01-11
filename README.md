@@ -1,6 +1,21 @@
-# Aura - AI Soulmate (Python Backend Version)
+# Aura - AI Soulmate (Full-Stack)
 
-A personalized, emotionally intelligent AI companion web application.
+A multimodal AI companion web application featuring personalized persona, local RAG (Retrieval-Augmented Generation), and image understanding.
+
+## 🛠 Technical Implementation
+
+### 1. Local RAG Engine
+- **Text Vectorization**: Uses `sentence-transformers` (`all-MiniLM-L6-v2`) to generate embeddings locally on CPU.
+- **Document Processing**: Supports PDF, DOCX, and TXT parsing via `pypdf` and `python-docx`.
+- **Contextual Retrieval**: Implements a local vector store with Cosine Similarity search to inject relevant knowledge into the LLM system prompt.
+
+### 2. Multimodal Vision
+- **Image Analysis**: Processes base64-encoded image attachments.
+- **Vision Routing**: Backend handles multimodal message formatting for Vision-capable models (e.g., GPT-4o) and includes graceful fallbacks for text-only models.
+
+### 3. API Proxy & Architecture
+- **FastAPI Backend**: Acts as a middleware to handle RAG logic, file indexing, and API request orchestration.
+- **Httpx Integration**: Custom HTTP client configuration to bypass common SDK proxy conflicts and handle high-concurrency requests.
 
 ## 🚀 Setup & Run
 

@@ -26,17 +26,10 @@ npm install
 # Start development server
 npm run dev
 ```
+
 Run screenshots
-
-<figure style="text-align: center;">
-  <img src="assets/run-backend.png" alt="">
-  <figcaption>Fig 1. Backend Server</figcaption>
-</figure>
-
-<figure style="text-align: center;">
-  <img src="assets/run-npm.png" alt="">
-  <figcaption>Fig 2. Frontend Development Server</figcaption>
-</figure>
+![run-backend](assets/run-backend.png)
+![run-npm](assets/run-npm.png)
 
 ### 3. Configure the App
 1. Open the app in your browser (usually `http://localhost:3000`).
@@ -52,15 +45,9 @@ Run screenshots
 - **Customizable Persona**: Change name, traits, and interests.
 
 Support both PC and Mobile views:
-<figure style="text-align: center;">
-  <img src="assets/chat-pc.png" alt="PC 界面示意图">
-  <figcaption>Fig 3. PC Chat Interface</figcaption>
-</figure>
+![pc-view](assets/chat-pc.png)
+![mobile-view](assets/mobile.png)
 
-<figure style="text-align: center;">
-  <img src="assets/mobile.png" alt="移动端显示效果">
-  <figcaption>Fig 4. Mobile Display</figcaption>
-</figure>
 ## Tech Stack
 - **Frontend**: React, Tailwind CSS, Lucide Icons
 - **Backend**: Python, FastAPI, Sentence-Transformers (Local Embeddings), OpenAI SDK
